@@ -204,23 +204,69 @@ vendor/lib/libmmcamera_ov5648_eeprom.so
 vendor/lib64/hw/gatekeeper.msm8994.so
 vendor/lib/hw/gatekeeper.msm8994.so
 
+# CNE
+bin/cnd
+etc/cne/SwimConfig.xml
+etc/cne/andsfCne.xml
+etc/permissions/cneapiclient.xml
+etc/permissions/com.quicinc.cne.xml
+-priv-app/CNEService/CNEService.apk
+vendor/lib64/libNimsWrap.so
+vendor/lib64/libcne.so
+vendor/lib64/libcneapiclient.so
+vendor/lib64/libcneconn.so
+vendor/lib64/libcneqmiutils.so
+vendor/lib64/libvendorconn.so
+vendor/lib64/libwqe.so
+vendor/lib64/libxml.so
+vendor/lib/libNimsWrap.so
+vendor/lib/libcne.so
+vendor/lib/libcneapiclient.so
+vendor/lib/libcneconn.so
+vendor/lib/libcneqmiutils.so
+vendor/lib/libvendorconn.so
+vendor/lib/libwqe.so
+vendor/lib/libxml.so
+
+# DPM
+bin/dpmd
+etc/dpm/dpm.conf
+etc/dpm/nsrm/NsrmConfiguration.xml
+etc/permissions/dpmapi.xml
+-framework/com.qti.dpmframework.jar
+-framework/dpmapi.jar
+vendor/lib64/libdpmctmgr.so
+vendor/lib64/libdpmfdmgr.so
+vendor/lib64/libdpmframework.so
+vendor/lib64/libdpmnsrm.so
+vendor/lib/libdpmctmgr.so
+vendor/lib/libdpmfdmgr.so
+vendor/lib/libdpmframework.so
+vendor/lib/libdpmnsrm.so
+
 # DRM
 bin/qseecomd
+vendor/lib64/libQSEEComAPI.so
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
-vendor/lib64/libQSEEComAPI.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
-vendor/lib/libQSEEComAPI.so
+vendor/lib/liboemcrypto.so
 vendor/lib/librpmb.so
 vendor/lib/libssd.so
 vendor/lib/libwvdrm_L1.so
-vendor/lib/librpmb.so
-vendor/lib/libssd.so
-vendor/lib/libWVStreamControlAPI_L1.so
 vendor/lib/mediadrm/libwvdrmengine.so
+
+# Fingerprint sensor
+etc/firmware/fingerprints.b00
+etc/firmware/fingerprints.b01
+etc/firmware/fingerprints.b02
+etc/firmware/fingerprints.b03
+etc/firmware/fingerprints.mdt
 
 # GPS
 bin/loc_launcher
@@ -312,6 +358,9 @@ vendor/lib/egl/libq3dtools_esx.so
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
+# IPA
+bin/ipacm-diag
+
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8994.so
 
@@ -372,15 +421,16 @@ vendor/lib/libmm-qdcm.so
 
 # QMI
 bin/irsc_util
+-lib64/libwpa_qmi_eap_proxy.so
 -vendor/lib64/libdiag.so
 vendor/lib64/libdsi_netctrl.so
 -vendor/lib64/libdsutils.so
-vendor/lib64/libidl.so
+-vendor/lib64/libidl.so
 -vendor/lib64/libqcci_legacy.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
 -vendor/lib64/libqmi.so
-vendor/lib64/libqmi_cci.so
+-vendor/lib64/libqmi_cci.so
 vendor/lib64/libqmi_client_helper.so
 -vendor/lib64/libqmi_client_qmux.so
 vendor/lib64/libqmi_common_so.so
@@ -392,12 +442,12 @@ vendor/lib64/libconnctrl.so
 -vendor/lib/libdiag.so
 vendor/lib/libdsi_netctrl.so
 -vendor/lib/libdsutils.so
-vendor/lib/libidl.so
+-vendor/lib/libidl.so
 -vendor/lib/libqcci_legacy.so
 vendor/lib/libqdi.so
 vendor/lib/libqdp.so
 -vendor/lib/libqmi.so
-vendor/lib/libqmi_cci.so
+-vendor/lib/libqmi_cci.so
 vendor/lib/libqmi_client_helper.so
 -vendor/lib/libqmi_client_qmux.so
 vendor/lib/libqmi_common_so.so
@@ -420,7 +470,6 @@ etc/permissions/qcrilhook.xml
 -framework/qcnvitems.jar
 -framework/qcrilhook.jar
 lib64/libparam.so
-vendor/lib64/libcneapiclient.so
 vendor/lib64/libconfigdb.so
 -vendor/lib64/libmdmdetect.so
 vendor/lib64/libnetmgr.so
@@ -429,7 +478,6 @@ vendor/lib64/libril-qc-qmi-1.so
 vendor/lib64/libril-qc-radioconfig.so
 vendor/lib64/libril-qcril-hook-oem.so
 vendor/lib64/libsystem_health_mon.so
-vendor/lib64/libxml.so
 -vendor/lib/libmdmdetect.so
 
 # Sensors
